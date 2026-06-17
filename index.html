@@ -163,6 +163,7 @@
     img[src*="pelayanan-kami"] { aspect-ratio: 1/1; }
     img[alt*="Piagam"] { aspect-ratio: 144/200; }
     .grid.grid-cols-3 img { aspect-ratio: 4/3; object-fit: cover; }
+    .artikel-pagination { display: none; }
   </style>
 </head>
 
@@ -194,7 +195,7 @@
   </header>
 
   <main>
-    <section class="pt-24 pb-16 md:pt-32 md:pb-24">
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24"K>
       <div class="max-w-screen-xl mx-auto px-6">
         <div>
           <h1 class="uppercase text-2xl font-bold text-dark text-center md:text-4xl tracking-wide">Yayasan Lentera Surakarta</h1>
@@ -228,7 +229,7 @@
       </div>
     </section>
 
-    <section class="py-0 md:py-0 mt-24" id="tentang-lentera">
+    <section class="py-0 md:py-0 mt-24" id="tentang-lentera"K>
       <div class="bg-accent">
         <div class="max-w-screen-xl mx-auto px-6 py-8 md:py-20">
           <div>
@@ -281,7 +282,7 @@
     </section>
 
     <section class="py-16 md:py-24 bg-white" id="latar-belakang">
-      <div class="max-w-screen-xl mx-auto px-6 flex flex-col gap-10">
+      <div class="max-w-screen-xl mx-auto px-6 flex flex-col gap-10"K>
         <div>
           <h2 class="text-2xl font-bold text-dark text-center md:text-4xl mb-4">Latar Belakang Lentera</h2>
           <div class="w-20 h-1 bg-accent mx-auto mb-12 md:mb-16 rounded-full"></div>
@@ -315,7 +316,7 @@
       </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-light" id="program-pelayanan-kami">
+    <section class="py-16 md:py-24 bg-light" id="program-pelayanan-kami"K>
       <div class="max-w-screen-xl mx-auto px-6 flex flex-col gap-10">
         <div class="text-center">
           <h2 class="uppercase text-2xl font-bold text-dark md:text-4xl mb-4">Program Pelayanan Kami</h2>
@@ -338,7 +339,7 @@
       </div>
     </section>
 
-    <section class="py-16 md:py-24">
+    <section class="py-16 md:py-24"K>
       <div class="max-w-screen-xl mx-auto px-6">
         <div id="visi" class="mb-16 md:mb-24">
           <div class="relative rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #ba4248 0%, #9a3540 50%, #7a2a32 100%);">
@@ -440,43 +441,74 @@
           <div class="w-20 h-1 bg-accent mx-auto mb-6 rounded-full"></div>
           <p class="text-gray-500 text-lg max-w-2xl mx-auto">Informasi terkini seputar kegiatan dan program Yayasan Lentera Surakarta</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover">
-            <div class="relative">
-              <img src="assets/images/article/3/20260402_100855.jpg.jpeg" alt="Yayasan Lentera Perkuat Kolaborasi Stakeholder" class="w-full h-52 object-cover" />
-              <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Kegiatan</span>
+        <div class="flex items-center gap-4">
+          <div class="swiper-prev-artikel hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
+            <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><path d="M9 6L15 12L9 18" stroke="#ba4248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
+          <div class="swiper artikelSwiper flex-1 overflow-hidden rounded-2xl">
+            <div class="swiper-wrapper">
+          <div class="swiper-slide h-auto">
+                <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover h-full">
+                  <div class="relative">
+                    <img src="assets/images/article/4/WhatsApp Image 2026-06-17 at 11.33.26 AM.jpeg" alt="Aerostreet dan Rangkul Foundation Salurkan Donasi untuk ADHA" class="w-full h-52 object-cover" />
+                    <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Kegiatan</span>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-sm text-gray-400 mb-2">16 Juni 2026</p>
+                    <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Aerostreet dan Rangkul Foundation Salurkan Donasi Rp100 Juta untuk Anak-Anak ADHA di Yayasan Lentera Surakarta</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">PT Adco Pakis Mas melalui brand lokal Aerostreet bersama Rangkul Foundation menyalurkan donasi CSR sebesar Rp100 juta kepada Yayasan Lentera Surakarta...</p>
+                    <a href="article/aerostreet-rangkul-lentera.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Baca Artikel <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto">
+                <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover h-full">
+                  <div class="relative">
+                    <img src="assets/images/article/3/20260402_100855.jpg.jpeg" alt="Yayasan Lentera Perkuat Kolaborasi Stakeholder" class="w-full h-52 object-cover" />
+                    <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Kegiatan</span>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-sm text-gray-400 mb-2">2 April 2026</p>
+                    <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Yayasan Lentera Perkuat Kolaborasi Stakeholder untuk Meningkatkan Kepatuhan Pengobatan HIV</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Yayasan Lentera Surakarta menggelar pertemuan kolaboratif bersama para pemangku kepentingan untuk memperkuat kepatuhan pengobatan HIV...</p>
+                    <a href="article/yayasan-lentera-perkuat-kolaborasi-stakeholder.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Selengkapnya <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto">
+                <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover h-full">
+                  <div class="relative">
+                    <img src="assets/images/article/2/20260316_101530.jpg.jpeg" alt="Workshop Penguatan Penjangkauan dan Pendampingan HIV" class="w-full h-52 object-cover" />
+                    <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Kegiatan</span>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-sm text-gray-400 mb-2">16 Maret 2026</p>
+                    <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Workshop Penguatan Penjangkauan dan Pendampingan HIV: Membangun Layanan yang Inklusif</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Yayasan Lentera Surakarta menyelenggarakan Workshop on Outreach and Assistance Projects for PLWHA and CLWHA...</p>
+                    <a href="article/workshop-penguatan-penjangkauan-dan-pendampingan-HIV.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Baca Artikel <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide h-auto">
+                <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover h-full">
+                  <div class="relative">
+                    <img src="assets/images/image-5.jpeg" alt="Mengapa Tes HIV Lebih Awal Itu Penting?" class="w-full h-52 object-cover" />
+                    <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Edukasi</span>
+                  </div>
+                  <div class="p-6">
+                    <p class="text-sm text-gray-400 mb-2">2026</p>
+                    <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Mengapa Tes HIV Lebih Awal Itu Penting? Kenali Statusmu, Lindungi Masa Depanmu</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-4">Tes HIV dini membantu mendeteksi infeksi lebih awal, mencegah keterlambatan diagnosis, membuka akses pengobatan ARV...</p>
+                    <a href="article/mengapa-tes-HIV-dini-penting.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Baca Lengkap <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="p-6">
-              <p class="text-sm text-gray-400 mb-2">2 April 2026</p>
-              <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Yayasan Lentera Perkuat Kolaborasi Stakeholder untuk Meningkatkan Kepatuhan Pengobatan HIV</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Yayasan Lentera Surakarta menggelar pertemuan kolaboratif bersama para pemangku kepentingan untuk memperkuat kepatuhan pengobatan HIV...</p>
-              <a href="article/yayasan-lentera-perkuat-kolaborasi-stakeholder.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Selengkapnya <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
-            </div>
-          </article>
-          <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover">
-            <div class="relative">
-              <img src="assets/images/article/2/20260316_101530.jpg.jpeg" alt="Workshop Penguatan Penjangkauan dan Pendampingan HIV" class="w-full h-52 object-cover" />
-              <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Kegiatan</span>
-            </div>
-            <div class="p-6">
-              <p class="text-sm text-gray-400 mb-2">16 Maret 2026</p>
-              <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Workshop Penguatan Penjangkauan dan Pendampingan HIV: Membangun Layanan yang Inklusif</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Yayasan Lentera Surakarta menyelenggarakan Workshop on Outreach and Assistance Projects for PLWHA and CLWHA...</p>
-              <a href="article/workshop-penguatan-penjangkauan-dan-pendampingan-HIV.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Baca Artikel <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
-            </div>
-          </article>
-          <article class="bg-light rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 card-hover">
-            <div class="relative">
-              <img src="assets/images/image-5.jpeg" alt="Mengapa Tes HIV Lebih Awal Itu Penting?" class="w-full h-52 object-cover" />
-              <span class="absolute top-4 left-4 bg-accent text-light text-xs font-semibold px-3 py-1 rounded-full">Edukasi</span>
-            </div>
-            <div class="p-6">
-              <p class="text-sm text-gray-400 mb-2">2026</p>
-              <h3 class="text-xl font-bold text-dark mb-3 leading-snug">Mengapa Tes HIV Lebih Awal Itu Penting? Kenali Statusmu, Lindungi Masa Depanmu</h3>
-              <p class="text-gray-500 text-sm leading-relaxed mb-4">Tes HIV dini membantu mendeteksi infeksi lebih awal, mencegah keterlambatan diagnosis, membuka akses pengobatan ARV...</p>
-              <a href="article/mengapa-tes-HIV-dini-penting.html" class="inline-flex items-center text-accent font-semibold text-sm hover:underline">Baca Lengkap <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
-            </div>
-          </article>
+            <div class="swiper-pagination artikel-pagination"></div>
+          </div>
+          <div class="swiper-next-artikel hidden md:block cursor-pointer hover:opacity-70 transition-opacity">
+            <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6L15 12L9 18" stroke="#ba4248" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </div>
         </div>
       </div>
     </section>
@@ -619,6 +651,17 @@
       pagination: { el: ".swiper-pagination", clickable: true },
       loop: true,
       autoplay: { delay: 4500, disableOnInteraction: false },
+    });
+    var artikelSwiper = new Swiper(".artikelSwiper", {
+      navigation: { nextEl: ".swiper-next-artikel", prevEl: ".swiper-prev-artikel" },
+      slidesPerView: 1,
+      spaceBetween: 24,
+      breakpoints: {
+        768: { slidesPerView: 2, spaceBetween: 24 },
+        1024: { slidesPerView: 3, spaceBetween: 32 },
+      },
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
     });
   </script>
 
